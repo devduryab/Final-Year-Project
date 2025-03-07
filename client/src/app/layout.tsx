@@ -1,21 +1,21 @@
-import { ThemeProvider } from "@/utils/theme-provider"
-import "./globals.css"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import type React from "react"
+import { ThemeProvider } from "@/utils/theme-provider";
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import type React from "react";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "StreamLine - Simplify Your Workflow",
+  title: "Final Year Project",
   description:
-    "StreamLine is a powerful SaaS platform designed to streamline your business processes and boost productivity.",
-}
+    "University Final Year Project. Assignment Paraphrasing Checking System With AI Integration.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -25,6 +25,5 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
-
